@@ -22,7 +22,7 @@ public class DynamicProgramming {
         //if (...) return ...
 
         // (a)에 대한 답을 구한 적이 있으면 곧장 반환
-        int ret = ret = cache[a];
+        int ret = cache[a];
         if (ret != -1) return ret;
 
         // 여기에서 답을 계산한다
@@ -36,7 +36,7 @@ public class DynamicProgramming {
         //if (...) return ...
 
         // (a, b)에 대한 답을 구한 적이 있으면 곧장 반환
-        int ret = ret = cache2[a][b];
+        int ret = cache2[a][b];
         if (ret != -1) return ret;
 
         // 여기에서 답을 계산한다
