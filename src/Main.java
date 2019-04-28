@@ -10,7 +10,7 @@ public class Main {
 
     private static final IO FLAG = IO.FILE_IO;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         if (FLAG == IO.COMMON_IO) {
             useCommonIo();
@@ -19,11 +19,21 @@ public class Main {
         }
     }
 
-    private static void useCommonIo() {
+    private static void useCommonIo() throws IOException {
+        // #1
         Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
+        String input1 = sc.nextLine();
 
-        // Use input
+        // #2
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] input2 = br.readLine().split(" ");
+
+        solve();
+
+        // Output
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        bw.write("");
+        bw.flush();
     }
 
     private static void useFileIo() {
@@ -34,12 +44,16 @@ public class Main {
              BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {
             String input = br.readLine();
 
-            // Use input and write file
-
             String output = "test";
+            solve();
+
             bw.write(output);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void solve() {
+        // Implement solution
     }
 }
