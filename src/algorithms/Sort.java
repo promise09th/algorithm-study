@@ -15,7 +15,7 @@ public class Sort {
         Arrays.sort(arr);
     }
 
-    public static  void arrayParallelSort(int[] arr) {
+    public static void arrayParallelSort(int[] arr) {
         /**
          * Data 가 2500개보다 적은 경우, 그냥 sort가 나음
          * Data 가 2500개와 비슷한 경우, sort와 parallelSort 사이에 성능차이 없음
@@ -24,7 +24,7 @@ public class Sort {
         Arrays.parallelSort(arr);
     }
 
-    public static  void insertionSort(int[] arr) {
+    public static void insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];
             int aux = i - 1;
@@ -37,11 +37,11 @@ public class Sort {
         }
     }
 
-    public static  void qsort1st(int[] arr) {
+    public static void qsort1st(int[] arr) {
         qsort1stImpl(arr, 0, arr.length - 1);
     }
 
-    private static  void qsort1stImpl(int[] arr, int start, int end) {
+    private static void qsort1stImpl(int[] arr, int start, int end) {
         if (start >= end) {
             return;
         }
@@ -71,7 +71,7 @@ public class Sort {
         qsort1stImpl(arr, right + 1, end);
     }
 
-    public static  void qsort2nd(int[] arr) {
+    public static void qsort2nd(int[] arr) {
         qsort2ndImpl(arr, 0, arr.length - 1);
     }
 
