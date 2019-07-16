@@ -1,11 +1,10 @@
 # Algorithm : Study
 
-NOTE : 코드잼이나 코딩테스트 관련한 자료를 모으는 Git 입니다
 
 ## Algorithm list
 * BasicMath
 * BinarySearch
-* BisectionMethod(이분법 / 삼분법)
+* BisectionMethod (이분법 / 삼분법)
 * DynamicProgramming
 * PrimeFactorizations
 * Sort
