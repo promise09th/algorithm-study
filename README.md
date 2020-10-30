@@ -8,6 +8,7 @@
 * DynamicProgramming
 * PrimeFactorizations
 * Sort
+* Trie
 * TSP
 
 ## References
